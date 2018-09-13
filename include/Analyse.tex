@@ -57,11 +57,21 @@ Transcending Boundaries is an exhibition that ran in the beginning of 2017 at th
     	\label{fig:transcendingBoundaries}
     \end{figure}
     
-\section{State of the Art - Technology}
+\section{State of the Art - interaction/tracking Technology}
+In the following sections the specifications, and application ideas for different technologies, will be presented in relation to possible ways of interacting with a projection.   
     
-\subsection{The Nintendo Wii Remote - Specifications, and application ideas} % Sofie
+\subsection{The Nintendo Wii Remote } % Sofie
 The Nintendo Wii Remote, is a controller designed for use with the Nintendo Wii console. It connects to the console with a short range Bluetooth connection with a maximum operating distance of approximately 10 meters\cite{WiimoteWIKI}\cite{WiimoteSpecs}. It features a built-in speaker, force feedback, and a motion sensor in form of an accelerometer, along with a optical censor, which is used to determine position and pointing direction by sensing light from a sensor bar connected to the console. The maximum measure distance for the optical sensor is 5 meters.\cite{WiimoteWIKI}. \\
-These features might be used for this project, as a way of interacting with a installation. As inspiration for ways to do so, a project by the researcher Johnny Chung Lee \cite{JohnnyLeeWiiMote}, shows how using the optical sensor of the Wii Remote can be used to interact with a projection, and to track head motion and viewing direction of a single user, in a simplistic manner. To do so, he uses the infrared senor in the Wii Remote, to act as a receiver, and a infrared LED as the device to be tracked by the Wii Remote. The Wii Remote is mounted to the screen/projection area, and the refrared LED device is  The software he uses, is open source and is designed to be used to create an interactive whiteboard with only these       
+These features might be used for this project, as a way of interacting with a installation. As inspiration for ways to do so, a project by the researcher Johnny Chung Lee \cite{JohnnyLeeWiiMoteDemo}, shows that the optical sensor of the Wii Remote can be used to interact with a projection, and to track head motion and viewing direction of a single user, in a simplistic manner. To do so, he uses the infrared senor in the Wii Remote, to act as a receiver, and a infrared LED as the device to be tracked by the Wii Remote. The Wii Remote is mounted to the screen/projection area, and the infrared LED(s) is provided to the user as integrated in a pen(infrared pen) or in glasses, depending on the wanted way of interaction. The software Lee uses, is open source and is designed to be used to create a low budged interactive whiteboard with the mentioned hardware (Wii Remote, infrared LED, and a screen/projector)\cite{JohnnyLeeWiiMProgram}.
+
+\subsection{The Kinect for Xbox One (2013 version)}
+The latest model of the Kinect, uses a time-of-flight camera, along with an infrared camera to track and read the environment\cite{KinectWiki}. The time-of-flight camera measures distance by emitting a pulse of light and then measure the time for the light signal to return in relation to the speed of light. Thereby calculating the distance to each point within the scene. 
+This Kinect version can track within a 3 ft range, detect heart rate and facial expressions of the user, as well as estimate the joints and thereby skeletal composition of op to 6 users at the time\cite{KinectWiki}.\\
+Part owner of an art collective named \textit{Floating Point} Jack Kalish \cite{LANscapes}, used the Kinect in an art installation \textit{LanScape}, where the users/observers movements would manipulate a digital landscape, projected on a wall. The landscape would or example take shape as mountains or valleys if the user would raise their arms or sit on the floor, respectively.  
+Garratt Gallagher from MIT’s Computer Science and Artificial Intelligence Laboratory (CSAIL) \cite{MR_MIT}, used the Kinect to create an interface similar to the one seen in the fiction film \textit{Minority Report}. The Kinect can as seen, also be used to track gestures and thereby interact with interfaces. 
+
+
+  
 
 \subsection{Playstation DualShock 4 Controller}
 The DualShock 4 is a wireless controller made by Sony for the Playstation 4(PS4). It features a touchpad, a 6-axis motion sensor(3-axis gyroscope and 3-axis accelerometer), a mono-speaker, various controls, lights and vibrations\cite{dualshock4}. When installing programs similar to DS4Windows\footnote{DS4Windows website: \url{http://ds4windows.com/}} on a PC it is possible to connect the DualShock4 to the PC and thereby take advantage of its features on this platform.
@@ -77,4 +87,21 @@ The DualShock 4 is a wireless controller made by Sony for the Playstation 4(PS4)
     \end{figure}
 
 \subsection{Multiple Display setups}
-As seen in \autoref{sec:leapMotionHolodeck} and \autoref{sec:transcendingBoundaries} multiple projectors working in tandem are utilized to create immersive technology. There are several ways of having multiple projectors working together. One is using a Graphical Processing Unit, or GPU for short with sufficient outputs to drive all the required projectors. Newer graphics cards can run up to 4 monitors at the same time, or with the use of a display port hub, splitting the bandwidth of the display ports to allow more monitors at lower resolutions. Each display port has the possibility of being split into 3, which makes it possible to run 10 screens off a single high end GPU. If more monitors than this are needed, multiple GPU's can be installed in the same system, and even more displays can be shown. Another way to achieve multiple displays with a single display port is using a technology called daisy chaining. The principle behind this is to connect multiply displays where each one is only connected with a single wire. Depending on the resolution this can be done with 2-4 monitors.
+As seen in \autoref{sec:leapMotionHolodeck} and \autoref{sec:transcendingBoundaries} multiple projectors working in tandem are utilized to create immersive technology. There are several ways of having multiple projectors working together. Using a Graphical Processing Unit, or GPU for short with sufficient outputs to drive all the required projectors. Newer graphics cards can run up to 4 monitors at the same time \footnote{GTX 1080TI: \url{https://www.evga.com/products/product.aspx?pn=11G-P4-6693-K3}}, or with the use of a display port hub, splitting the bandwidth of the display ports to allow more monitors at lower resolutions\footnote{EVGA DisplayPort Hub\url{https://www.evga.com/products/product.aspx?pn=200-dp-1301-l1}} which makes it possible to run even more screens off a single high end GPU, depending on how many display ports it has. If more monitors than this are needed, multiple GPU's can be installed in the same system, and even more displays can be used. Another way to achieve multiple displays with a single display port is using a technology called daisy chaining. The principle behind this is to connect multiple displays supporting display ports where each one is connected in sequence to each other, hence only requiring one output from the GPU. Depending on the resolution this can be done with 2-5 monitors\cite{displayport}.
+
+\section{Perception}
+% https://ieeexplore.ieee.org/document/1667620/#full-text-section
+
+% https://link.springer.com/article/10.1007/BF00896880
+
+% file:///Users/damh/Downloads/927-3572-1-SM.pdf
+
+% http://diposit.ub.edu/dspace/bitstream/2445/49643/1/631349.pdf
+
+
+
+\section{Gamification}
+    The definition of gamification this paper is adhering to is defined by Sebastian Deterdin et al as being: \begin{quote}
+        \textit{"the use of game design elements in non-game contexts"}\cite{gamification}.\\
+    \end{quote}
+    The paper tries to define gamification due to the popularity the word has gotten in both the industry and scientific space\cite{gamification}.
