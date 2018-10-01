@@ -1,93 +1,57 @@
 \chapter{Analysis}\label{chap:analysis}
+Before being able to design a solution to above mentioned problem, a more detailed description of the said problem, along with the wishes and limitations established by Zoo, is needed. 
 
-\section{State of the Art - Applications}
-\subsection{Augmented Reality Sandbox} % Søren
+\section{Implicit Human Computer Interaction}
 
-This project is an augmented reality sandbox that dynamically visualized the depth of manipulated sand using a topological map, as well as a water flow model, was used in an introductory course for geology students. With an overwhelmingly positive response with students being helped in their understanding of the topic as well as preferring the artifact to traditional topological map exercises, being particularly useful to prevent misconceptions \cite{woods2016pilot}.
+%conc
+Implicit human computer interaction is important to consider as it differentiates itself from explicit human computer interaction which encompasses more traditional interactions where the user directly expects a reaction from their initial action.
 
-The box was created with a real box of sand, a 3d scanning camera - a Microsoft Kinect 3d, \todo{which can be seen in section XYZ,} visualization software, and a projector.  The sandbox can be seen in \autoref{fig:augmentedrealitysandbox}.
+\section{Problem area}
+A meeting with XXX from the XXX department in Zoo, was held, to get an elaboration and clarification on Zoos challenges, limitations, needs and wishes, and to exchange ideas for possible solutions. During the meeting, it became clear that an important aspect to the project, would be to maintain the spirit of Zoo, by staying true to the nature of the animals, and creating a family friendly, informative, experience based around the animals. 
+From this, a descriptive guideline for the project, based on the needs and wishes of Zoo, came to be:  
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.9\linewidth]{figure/Analysis/augmentedrealitysandbox.png}
-	\caption{Augmented reality sandbox showing a topographical map of the sand. Simulated water can be seen on the other side of the hill \cite{woods2016pilot}.}
-	\label{fig:augmentedrealitysandbox}
-\end{figure}
+\begin{itemize}
+    \item[-] The installation should add some degree of value to the user, in terms of an experience. 
+    \item[-] The experience must concern the animals located in same area as the installation, to achieve a coherent experience.
+    \item [-] The experience should be informative.
+    \item[-] If animals is to be represented, it must be done in respect to the natural behavior of the animal. An example of a violation to this, would be to humanize the animals, by for instance, animating talking animals. 
+    \item[-] The experience should not be age specific, but should preferably primarily appeal to children, and secondary their parents, as this target group is the most represented audience in the park. 
+    \item[-] The interaction level should be simple and straightforward, and must not need more than the users themselves to being able to perform the interactions. Therefore no controllers or wearables must be used. 
+    \item[-] The experience should preferably not be dependent on the season, but instead encourage all-year- . As so, it was suggested to make an experience that could be used in weather conditions, where most animals will not be outdoors for the guest to see.
+    \item[-]
+\end{itemize}
 
+    % Baseret på dyr, relevant for omgivelser
+    % Saglig, ikke fjollet
+    % Informativt
+    % Børnehøjde men OGSÅ til voksne!
+    % Simple interaktion, ingen controllerer.
+   
+    % Ikke bundet til en specifik sæson.
+    % Gæster skal gå derfra med en oplevelse/ værditilførelse.
+    % Design skal gerne kunne holde på folk.
 
-    
-\subsection{Interactive Projection Mapping Prototype} % Daniel
-    This project demonstrates the possibilities of manipulating the physical world using the Leap Motion in combination with an Arduino, as seen in \autoref{fig:leapProjector}. Using the Leap Motion API \todo{as described in section XYZ}, the creator allowed for simple gestures to control the box and pick up the pets in the world. The goal of the game is as simple as picking up the four pets and putting them on their pillow, all while rotation the cube to cycle through the different seasons and sides of the cube\cite{leapMotionProjectionMapping}.
-    \begin{figure}[H]
-    	\centering
-    	\includegraphics[width=0.8\linewidth]{figure/Analysis/LeapProjector.png}
-    	\caption{A physical game, using the Leap Motion to pick up pets and rotating the physical cube using gestures\cite{leapMotionProjectionMapping}.}
-    	\label{fig:leapProjector}
-    \end{figure}
-    The game can be played exclusively on the PC, without the physical cube. But the point from the creator's side was to learn to interface with the physical cube using the Leap Motion.
-\subsection{Immersive Holodeck}\label{sec:leapMotionHolodeck} % Daniel
-    A university in Ohio made an immersive \textit{"holodeck"} like experience, using 3 projectors in combination with a Leap Motion positioned in the the middle of the room. Using the leap motion, a user could manipulate objects in minecraft, like seen in \autoref{fig:holodeck}, or navigate around the world using Google maps\cite{leapMotionHolodeck}.
-    
-    \begin{figure}[H]
-    	\centering
-    	\includegraphics[width=0.7\linewidth]{figure/Analysis/holodeck.jpg}
-    	\caption{Ohio university made immersive holodeck, made for immersive language learning\cite{leapMotionHolodeck}.}
-    	\label{fig:holodeck}
-    \end{figure}
-    
-    The purpose of the system, was to allow immersion while learning a language, putting you in the environments that the language is spoken.
-\subsection{DybhavsVR} % Fredrik
-
-\textbf{theBlu} is a virtual reality game developed by Wevr\footnote{https://blog.wevr.com/acclaimed-vr-series-theblu-out-on-transport-oculus-touch-896}. This game offers an immersive deep sea experience which puts the user in different environments under the ocean. The game offers three different undersea experiences. In the first experience, the user is placed on a boat and encounters a variety of species and in the end encounters a whale up close. There is no real control element in this experience and is solely an observation. The second experience is a Reef Migration, which the user will experience a variety of different reef animals such as turtles and different species of fish. As the first experience, this interaction does not offer controls either. The last experience is a Luminous Abyss experience, where the user will be enveloped in almost complete darkness, and then to be equipped with a flashlight utilizing tracked motion controllers to look around in the deep ocean. The user can then move around in a room scale while using the flashlight to illuminate different deep sea species around the vicinity. In \autoref{fig:theBlu} an example of the luminus abyss experience can be seen.
-    \begin{figure}[H]
-    	\centering
-    	\includegraphics[width=0.9\linewidth]{figure/Analysis/theblu.png}
-    	\caption{Wevr's theBlu game}
-    	\label{fig:theBlu}
-    \end{figure}
-All these experiences can use a small room which offers the user to move around in a small vicinity while interacting with the experiences. 
-
-\subsection{Transcending Boundaries}\label{sec:transcendingBoundaries} % Jens
-Transcending Boundaries is an exhibition that ran in the beginning of 2017 at the Pace Gallery in London. It featured a series of immersive installations made by teamLab in an attempt to transcend the boundaries between digital artwork and the physical world\cite{transcendingBoundries}. \autoref{fig:transcendingBoundaries} shows a virtual waterfall, flowers and butterflies that are projected up on the walls and on the floor in one of the rooms of the exhibit using multiple projectors. The vegetation would indicate changes in seasons and would go through all 4 seasons every hour. Viewers in the room would obstruct the flow of water based on where they were standing and thereby became a part of the artwork. 
-
-    \begin{figure}[H]
-    	\centering
-    	\includegraphics[width=0.9\linewidth]{figure/Analysis/transcendingBoundaries.jpg}
-    	\caption{Figure showing 3 people interacting with the virtual waterfall installation from teamLab's exhibition at the Pace Gallery in London\cite{transcendingBoundries}.}
-    	\label{fig:transcendingBoundaries}
-    \end{figure}
-    
-\section{State of the Art - interaction/tracking Technology}
-In the following sections the specifications, and application ideas for different technologies, will be presented in relation to possible ways of interacting with a projection.   
-    
-\subsection{The Nintendo Wii Remote } % Sofie
-The Nintendo Wii Remote, is a controller designed for use with the Nintendo Wii console. It connects to the console with a short range Bluetooth connection with a maximum operating distance of approximately 10 meters\cite{WiimoteWIKI}\cite{WiimoteSpecs}. It features a built-in speaker, force feedback, and a motion sensor in form of an accelerometer, along with a optical censor, which is used to determine position and pointing direction by sensing light from a sensor bar connected to the console. The maximum measure distance for the optical sensor is 5 meters.\cite{WiimoteWIKI}. \\
-These features might be used for this project, as a way of interacting with a installation. As inspiration for ways to do so, a project by the researcher Johnny Chung Lee \cite{JohnnyLeeWiiMoteDemo}, shows that the optical sensor of the Wii Remote can be used to interact with a projection, and to track head motion and viewing direction of a single user, in a simplistic manner. To do so, he uses the infrared senor in the Wii Remote, to act as a receiver, and a infrared LED as the device to be tracked by the Wii Remote. The Wii Remote is mounted to the screen/projection area, and the infrared LED(s) is provided to the user as integrated in a pen(infrared pen) or in glasses, depending on the wanted way of interaction. The software Lee uses, is open source and is designed to be used to create a low budged interactive whiteboard with the mentioned hardware (Wii Remote, infrared LED, and a screen/projector)\cite{JohnnyLeeWiiMProgram}.
-
-\subsection{The Kinect for Xbox One (2013 version)}
-The latest model of the Kinect, uses a time-of-flight camera, along with an infrared camera to track and read the environment\cite{KinectWiki}. The time-of-flight camera measures distance by emitting a pulse of light and then measure the time for the light signal to return in relation to the speed of light. Thereby calculating the distance to each point within the scene. 
-This Kinect version can track within a 3 ft range, detect heart rate and facial expressions of the user, as well as estimate the joints and thereby skeletal composition of op to 6 users at the time\cite{KinectWiki}.\\
-Part owner of an art collective named \textit{Floating Point} Jack Kalish \cite{LANscapes}, used the Kinect in an art installation \textit{LanScape}, where the users/observers movements would manipulate a digital landscape, projected on a wall. The landscape would or example take shape as mountains or valleys if the user would raise their arms or sit on the floor, respectively.  
-Garratt Gallagher from MIT’s Computer Science and Artificial Intelligence Laboratory (CSAIL) \cite{MR_MIT}, used the Kinect to create an interface similar to the one seen in the fiction film \textit{Minority Report}. The Kinect can as seen, also be used to track gestures and thereby interact with interfaces. 
+% examples of existing installations in the park.
 
 
-  
+% possible locations
+% statistics about the target group (børn og voksne) 
 
-\subsection{Playstation DualShock 4 Controller}
-The DualShock 4 is a wireless controller made by Sony for the Playstation 4(PS4). It features a touchpad, a 6-axis motion sensor(3-axis gyroscope and 3-axis accelerometer), a mono-speaker, various controls, lights and vibrations\cite{dualshock4}. When installing programs similar to DS4Windows\footnote{DS4Windows website: \url{http://ds4windows.com/}} on a PC it is possible to connect the DualShock4 to the PC and thereby take advantage of its features on this platform.
+% FPS 
 
-\subsection{Leap Motion} % Daniel
-    Leap motion is a tool that is used for tracking hands and fingers in real time\cite{leapMotion}. The newest iteration integrates with Virtual Reality, hence eliminating the need for having a controller in your hand. The Leap Motion controller functions by having three IR LEDs and two monochromatic IR Cameras. The maximum reading distance from the controller is approximately 1m\cite{leapMotion}. The accuracy of the controller is roughly 0.7mm, hence the virtual version of ones hands can be very precise as seen in \autoref{fig:leapMotion}.
-    
-    \begin{figure}[H]
-    	\centering
-    	\includegraphics[width=0.9\linewidth]{figure/Analysis/leapMotion.jpg}
-    	\caption{Image of the Leap Motion in action, taken from the Amazon store page.}
-    	\label{fig:leapMotion}
-    \end{figure}
 
-\subsection{Multiple Display setups}
-As seen in \autoref{sec:leapMotionHolodeck} and \autoref{sec:transcendingBoundaries} multiple projectors working in tandem are utilized to create immersive technology. There are several ways of having multiple projectors working together. Using a Graphical Processing Unit, or GPU for short with sufficient outputs to drive all the required projectors. Newer graphics cards can run up to 4 monitors at the same time \footnote{GTX 1080TI: \url{https://www.evga.com/products/product.aspx?pn=11G-P4-6693-K3}}, or with the use of a display port hub, splitting the bandwidth of the display ports to allow more monitors at lower resolutions\footnote{EVGA DisplayPort Hub\url{https://www.evga.com/products/product.aspx?pn=200-dp-1301-l1}} which makes it possible to run even more screens off a single high end GPU, depending on how many display ports it has. If more monitors than this are needed, multiple GPU's can be installed in the same system, and even more displays can be used. Another way to achieve multiple displays with a single display port is using a technology called daisy chaining. The principle behind this is to connect multiple displays supporting display ports where each one is connected in sequence to each other, hence only requiring one output from the GPU. Depending on the resolution this can be done with 2-5 monitors\cite{displayport}.
+
+
+
+% NEW SECTION! 
+% How to design to both children and adults 
+% interactive displays 
+% Sota for both hardware and software, projects mm. - SKAL sættes i perspektiv med interviewets fund! - bruges som design inspiration. 
+
+% Design requirements ( based on all the things above) 
+
+
+
 
 \section{Perception}
 "Perception is the ability to become aware of something through human senses (hearing, seeing, feeling etc)\\
@@ -103,6 +67,69 @@ As seen in \autoref{sec:leapMotionHolodeck} and \autoref{sec:transcendingBoundar
 % https://www.interaction-design.org/literature/topics/visual-hierarchy
 
 % https://dzone.com/articles/visual-perception-and-its-influence-in-ux-design-1
+
+\section{The seven stages of action} % Simon
+    The seven stages are awesomegaysauce. 
+
+
+
+\section{Interactive public displays} % Daniel
+    Interactive public displays are different from an interaction perspective than the normal use of displays that a user might be used to\cite{interactivePublicDisplays}. Mostly this difference comes from the interaction not beginning directly from interacting with the display, but happens in more indirect sense. To better understand why this is, the interaction phases of an interactive public display has been broken down into 6 different stages, as seen in \autoref{fig:audienceFunnel}. A user only goes between phases, when passing a threshold, e.g. for a user to pass into the first phase, their attention must be caught\cite{interactivePublicDisplays}.
+    
+    \begin{figure}[H]
+    	\centering
+    	\includegraphics[width=0.9\linewidth]{figure/Analysis/AudienceFunnel.png}
+    	\caption{The interaction phases of an interactive public display being broken down into 6 stages, compiled into the audience funnel model\cite{interactivePublicDisplays}.}
+    	\label{fig:audienceFunnel}
+    \end{figure}
+    
+    The entire interaction with the display only starts when a potential user gets their attention caught by the display. The attention grabbing mechanism of the display can vary wildly in implementation and style, but can in general terms be broken down into bottom-up processes and top-down processes\cite{interactivePublicDisplays}. Bottom-up processes involve some external stimuli that via something unexpected can help grab attention from a user, these can be a suddenly appearing polar bear, an error message, or any other item that the user might not have been looking for\cite{interactivePublicDisplays}. Top-down processes revolve around a user having a form of a goal that will guide their attention towards what they are looking for\cite{interactivePublicDisplays}, e.g. if a user was looking for a penguin, and a penguin was observed in their vision, their attention would be guided towards it.
+    
+    The second phase is entered after the user has become aware of the existence of the display, and might have turned their head, diverted their gaze towards the display or performed any action as an effect of the display\cite{interactivePublicDisplays}.
+    
+    While in the beginning of the interaction with the display, it is mostly reliant on attention from the user, but when a user is in the third phase, it becomes more dependent on the motivation to interact\cite{interactivePublicDisplays}. This motivation can be increased using curiosity and exploration\cite{interactivePublicDisplays}. Curiosity, according to the article, is described as 
+    \begin{quote}
+        \textit{"a precursor to explorative behavior, through which people make accessible previously unavailable information about their environment."}\cite{interactivePublicDisplays}
+    \end{quote}
+    So by presenting some information and leaving out some gaps, or having a puzzle missing one more piece to be finished, the user might become curious and start exploring the possibilities of e.g. putting in the last the piece of said puzzle\cite{interactivePublicDisplays}.
+    
+    The third phase begins when what was displayed during the second phase, makes the user curious enough to physically divert their body towards the display, or making any movement that is meant to cause the display to react, while not necessarily being in frame of the screen. At this point, it is the goal that the user's motivation to interact is high enough to enter the next phase, direct interaction\cite{interactivePublicDisplays}.
+    
+    The fourth phase of direct interaction is when a user has either positioned themselves in front of the display, or simply has entered the interaction zone of the display. In the case of the Magical Mirrors mentioned in the article\cite{interactivePublicDisplays}, the interaction zone, was the right dashed circle displayed in \autoref{fig:audienceFunnel}, while the left dashed circle was a secondary scree, that might be used when in phase five; Multiple interaction.
+    
+    The fifth phase of the interaction is started when a user, in the case of the magical mirrors, either goes from one display to another, or comes back for another interaction after ending the first\cite{interactivePublicDisplays}.
+    
+    The sixth and final phase the interaction might end with, is the follow up phase, where a user might do an action following up the interaction from the display. This might entail using their smartphone, to search for more information about the display or information gotten from the display during the interaction, or take a photograph of themselves or their friends still doing interaction\cite{interactivePublicDisplays}. 
+    
+    \subsection*{Conclusion}
+        The audience funnel describes the different phases of interaction a user might have with an interactive public display. A user won't necessarily follow the phases linearly, but might jump past direct interaction, and instead take pictures of their friends directly interacting with the display. The attention grabbing mechanics that are supposed to entice a user to enter the second and third phase, are discussed more in detail in \autoref{sec:visualAttention}.
+\section{Invoking action in users} % Søren
+%seven stages of action \cite{DesignOfEverydayThings} \cite{Norman1983}
+
+\cite{interactivePublicDisplaysKinect}
+
+\section{Visual attention}\label{sec:visualAttention}
+
+In "What attributes guide the deployment of visual attention and how do they do it?" Jeremy. M Wolfe explores which attributes guide visual attention\cite{Wolfe2004}.
+
+For this an example image is shown
+\begin{figure}[H]
+    	\centering
+    	\includegraphics[width=0.4\linewidth]{figure/Analysis/natureFig1.png}
+    	\caption{The red, the tilted or the big 5 are easy to find, the 2 not so much\cite{Wolfe2004}.}
+    	\label{fig:hard2find}
+    \end{figure}
+
+Based on several features like the ones in the picture, tests were conducted to rank the time and efficiency with which they were isolated. The study resulted in a table of attributes that could guide attention
+
+\begin{figure}[H]
+    	\centering
+    	\includegraphics[width=0.9\linewidth]{figure/Analysis/attributes2find.png}
+    	\caption{List of attributes and their importance\cite{Wolfe2004}.}
+    	\label{fig:attributes2find}
+    \end{figure}
+\todo{MAKE OWN TABLE}
+Considerations to include, if possible, all undoubted attributes as well as some probable attributes that guides attention should be made in the creation and installation of a display. All of these features are put into effect if they are different relative to their environment. As example if a display were of different luminance to it surroundings, it would probably attract attention.
 
 \section{Gamification}
     The definition of gamification this report is adhering to, is defined by Sebastian Deterdin et al as being: \begin{quote}
@@ -121,7 +148,118 @@ Secondly, the appearance and use of technology moreover runs counter to expectat
 
 Thirdly, interactive systems however offer opportunities to enhance important aspects of visitors' experience of animal encounters, and to widen the temporal and spatial dimensions of the encounter. 
 
-Finally, we interpret these insights by examining how technology is used in the context of interactions between numerous human and animal actors, and in a setting impacted by complex social and organisational forces."
+Finally, we interpret these insights by examining how technology is used in the context of interactions between numerous human and animal actors, and in a setting impacted by complex social and organizational forces."
 
 https://www.youtube.com/watch?v=XxTQOD9NI5g
 
+\section{Designing engaging experiences for children and their parents}
+
+Since a zoo is predominantly a place for families with children (Between 60 to 80\% worldwide)\cite{togetherAtTheZoo} it is relevant to study their shared experience in order to design engaging interactive installations aimed for children without neglecting the parents.
+A theoretical framework based on existing literature suggests that \textit{social bonding} with their children considered the primary experience from the parents' perspective, with \textit{"edutainment"}\footnote{Entertainment that is designed to be educational. Meriam-webster's definition can be seen here: \url{https://www.merriam-webster.com/dictionary/edutainment}} being a secondary goal of a visit at the zoo. Parents are interested in providing learning experiences for their children. However, \textit{entertainment} is the primary goal and \textit{togetherness} the secondary for children\cite{togetherAtTheZoo}. The learning aspect is not a priority for the younger children, at least not during the entire visit. Older children tend to have more curiosity towards detailed knowledge about the animals and read from the information boards together with their parents\cite{togetherAtTheZoo}. Through interviews of families conducted in Aalborg Zoo it was found that, aside from activities involving animals, physical activities in the zoo playground are also central for children when visiting the zoo. The occasional break from passively wathing the animals, by burning of energy, helps the children refocus when returning to explore the animals\cite{togetherAtTheZoo}.\\
+Digital technology is used more and more in zoos today in order to make the zoo experience increasingly engaging and educational through interactivity\cite{webberInteractiveTechInZoo}. It has the potential to be a very effective delivery system of information and raises awareness of e.g. conservation issues or animal welfare. Furthermore, it can create learning experiences that are attractive to children as well\cite{webberInteractiveTechInZoo}. The challenge of designing such interactive systems, however, is to design it in such a way that it enhances the human-animal encounters without stealing focus from it\cite{webberInteractiveTechInZoo}. A study shows that, instead of reading information of a sign, using live or video presentations helps visitors gain more knowledge about a zoo exhibit and makes them stay at the exhibit longer\cite{presentationStayDuration}.\\
+When designing an interactive public display or art installation ease-of-use is often considered the main goal of the user experience\cite{Hull2018}. The following experience model is based on an idea workshop with soundscape artists and children and it illustrates what aspects are also important to children when it comes to interactive experiences (See \autoref{fig:provisionalModelOfConsumerExperience}). Challenges in creativity and physical and mental skills are a priority. As is socializing or competing with others and also some form of sensation, such as touch, smell, taste etc. and having to use their imagination in some way.
+\todo{Create a new "provisional model of consumer experience" from the article}
+\begin{figure}[H]
+    	\centering
+    	\includegraphics[width=0.9\linewidth]{figure/Analysis/provModelExp.png}
+    	\caption{Provisional Model Of Consumer Experience\cite{Hull2018}}
+    	\label{fig:provisionalModelOfConsumerExperience}
+\end{figure}
+
+\subsection{Sub conlusion}
+Other than social bonding, educating children is a priority for parents when bringing their children to the zoo. It is not, however, a priority for the children who tend to lose focus from watching animals for too long\cite{togetherAtTheZoo}. Interactive digital technology can be used to enhance children's interest in learning about animals\cite{webberInteractiveTechInZoo}. When designing such interactive systems three aspects of interactive experiences(Challenge, Social, Sensation) should be kept in mind\cite{Hull2018}.
+
+\section{Designing for children}
+When considering zoo's population of visitors, a vast majority of the visitors are children of different ages(insert data from zoo when we get it here). Therefore, it is important to research and understand how to design for children as in comparison to adults. 
+When designing for children, cognitive and physical development is an important matter to be considered\cite{kidsDesign}. Furthermore, the role of the family is also an important aspect when it comes to how the children perceive the digital experience\cite{kidsDesign}.
+
+\subsection{Design principles}
+When discussing design principles with children in the focus, a list of compiled principles have been made by the childrens' design guide\cite{kidsDesign}, which consists of a team of 70+ 'heroes' which comes from different backgrounds such as designers, psychologist and neuroscientists. The ten principles can be seen in \autoref{princelist}.
+
+\begin{enumerate}\label{princelist}
+    \item \textbf{Everyone can play} I need a product that does not discriminate against characteristics such as gender, age, ability, language, ethnicity and socio-economic status. My parents, teachers, experts and communities also care about your product or service so include them in the process. And keep in mind that I might use your product even if it’s not designed for me.
+    \item \textbf{Give me control and offer support} Give me the tools I need to adapt your product or service to my needs. Consider where I am at in my development to both inspire me and nurture my growth. I need support to acquire new skills and encouragement to try self-driven challenges
+    \item \textbf{I have purpose so make my influence matter} Help me understand my place and value in the world. I need space to build and express a stronger sense of self. You can help me do this by involving me as a contributor (not just a consumer). I want to have experiences that are meaningful to me.
+    \item \textbf{Offer me something safe} Ensure you provide me with a model for healthy behaviour. A marked path or ‘lifeguard’ can tell me why something is unsafe, and then prevent me from doing it to strengthen responsible digital literacy. Make sure you equip my guardians with an understanding of this as well. And don’t forget that my data should be handled with the utmost respect and care.
+    \item \textbf{Create space for play (including a choice to chill)} When using your product or service, consider different moods, views and contexts of play . I am active, curious and creative but it is also okay to give me a break and offer me some breathing space. Foster interactive and passive time.
+    \item \textbf{Encourage me to be active and play with others} My well-being, social life, play, creativity, self-expression and learning can be enhanced when I collaborate and share with others. Provide me with experiences to help me build relationships and social skills with my peers and community.
+    \item \textbf{Give me room to explore and experiment} I need to experiment, take risks and learn from my mistakes. If/when there are mistakes, support me to fix them by myself. Encourage my curiosity but consider my capabilities based on age and development. Be mindful of the time I need to learn something new.
+    \item \textbf{Use communication I can relate to} Consider all forms of communication and make it accessible to all. Visuals can help me to learn, explore, play, and imagine the future. But keep in mind that age, ability, culture and language also impact the way my friends and I will interact with your product or service.
+    \item \textbf{Make it flexible for me} Consider my open and fixed types of play or learning in your design. This flexibility allows me to choose a personal path and keeps opportunities open for me. Expect me to use your product in unintended ways.
+    \item \textbf{You don’t know me, so make sure you include me} You should spend time with me, my friends and my guardians before you design a product or service. We have good ideas that could help you. Also ensure that you talk with people who are experts on my needs.
+\end{enumerate}
+
+\section{State of the Art}
+
+    \subsection{The Kinect for Xbox One (2013 version)}
+        The latest model of the Kinect, uses a time-of-flight camera, along with an infrared camera to track and read the environment\cite{KinectWiki}. The time-of-flight camera measures distance by emitting a pulse of light and then measure the time for the light signal to return in relation to the speed of light. Thereby calculating the distance to each point within the scene.
+        
+        This Kinect version can track within a 3\todo{WAT?} ft range, detect heart rate and facial expressions of the user, as well as estimate the joints and thereby skeletal composition of up to 6 users at the time\cite{KinectWiki}.
+        
+        Part owner of an art collective named \textit{Floating Point} Jack Kalish \cite{LANscapes}, used the Kinect in an art installation \textit{LanScape}, where the users/observers movements would manipulate a digital landscape, projected on a wall. The landscape would for example take shape as mountains or valleys if the user would raise their arms or sit on the floor, respectively.
+        
+        Garratt Gallagher from MIT’s Computer Science and Artificial Intelligence Laboratory (CSAIL) \cite{MR_MIT}, used the Kinect to create an interface similar to the one seen in the fiction film \textit{Minority Report}\footnote{Minority Report: \url{https://en.wikipedia.org/wiki/Minority_Report_(film)}}. The Kinect can as seen, also be used to track gestures and thereby interact with interfaces. 
+
+	\subsection{Augmented Reality Sandbox} % Søren
+	    This project is an augmented reality sandbox that dynamically visualized the depth of manipulated sand using a topological map, as well as a water flow model, was used in an introductory course for geology students. With an overwhelmingly positive response with students being helped in their understanding of the topic as well as preferring the artifact to traditional topological map exercises, being particularly useful to prevent misconceptions \cite{woods2016pilot}.
+
+	    The box was created with a real box of sand, a 3d scanning camera - a Microsoft Kinect 3d, \todo{which can be seen in section XYZ,} visualization software, and a projector.  The sandbox can be seen in \autoref{fig:augmentedrealitysandbox}.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\linewidth]{figure/Analysis/augmentedrealitysandbox.png}
+		\caption{Augmented reality sandbox showing a topographical map of the sand. Simulated water can be seen on the other side of the hill \cite{woods2016pilot}.}
+		\label{fig:augmentedrealitysandbox}
+	\end{figure}
+
+
+
+\subsection{Leap Motion} % Daniel
+    Leap motion is a tool that is used for tracking hands and fingers in real time\cite{leapMotion}. The newest iteration integrates with Virtual Reality, hence eliminating the need for having a controller in your hand. The Leap Motion controller functions by having three IR LEDs and two monochromatic IR Cameras. The maximum reading distance from the controller is approximately 1m\cite{leapMotion}. The accuracy of the controller is roughly 0.7mm, hence the virtual version of ones hands can be very precise as seen in \autoref{fig:leapMotion}.
+    
+    \begin{figure}[H]
+    	\centering
+    	\includegraphics[width=0.9\linewidth]{figure/Analysis/leapMotion.jpg}
+    	\caption{Image of the Leap Motion in action, taken from the Amazon store page.}
+    	\label{fig:leapMotion}
+    \end{figure}
+    
+\subsection{Immersive Holodeck}\label{sec:leapMotionHolodeck} % Daniel
+    A university in Ohio made an immersive \textit{"holodeck"} like experience, using 3 projectors in combination with a Leap Motion positioned in the the middle of the room. Using the leap motion, a user could manipulate objects in minecraft, like seen in \autoref{fig:holodeck}, or navigate around the world using Google maps\cite{leapMotionHolodeck}.
+    
+    \begin{figure}[H]
+    	\centering
+    	\includegraphics[width=0.7\linewidth]{figure/Analysis/holodeck.jpg}
+    	\caption{Ohio university made immersive holodeck, made for immersive language learning\cite{leapMotionHolodeck}.}
+    	\label{fig:holodeck}
+    \end{figure}
+    
+    The purpose of the system, was to allow immersion while learning a language, putting you in the environments that the language is spoken.
+    
+    	\subsection{Interactive Projection Mapping Prototype} % Daniel
+	    This project demonstrates the possibilities of manipulating the physical world using the Leap Motion in combination with an Arduino, as seen in \autoref{fig:leapProjector}. Using the Leap Motion API \todo{as described in section XYZ}, the creator allowed for simple gestures to control the box and pick up the pets in the world. The goal of the game is as simple as picking up the four pets and putting them on their pillow, all while rotating the cube to cycle through the different seasons and sides of the cube\cite{leapMotionProjectionMapping}.
+	    \begin{figure}[H]
+	    	\centering
+	    	\includegraphics[width=0.8\linewidth]{figure/Analysis/LeapProjector.png}
+	    	\caption{A physical game, using the Leap Motion to pick up pets and rotating the physical cube using gestures\cite{leapMotionProjectionMapping}.}
+	    	\label{fig:leapProjector}
+	    \end{figure}
+    The game can be played exclusively on the PC, without the physical cube. But the point from the creator's side was to learn to interface with the physical cube using the Leap Motion.
+
+
+\subsection{Multiple Display setups}
+As seen in \autoref{sec:leapMotionHolodeck} and \autoref{sec:transcendingBoundaries} multiple projectors working in tandem are utilized to create immersive technology. There are several ways of having multiple projectors working together. Using a Graphical Processing Unit, or GPU for short with sufficient outputs to drive all the required projectors. Newer graphics cards can run up to 4 monitors at the same time \footnote{GTX 1080TI: \url{https://www.evga.com/products/product.aspx?pn=11G-P4-6693-K3}}, or with the use of a display port hub, splitting the bandwidth of the display ports to allow more monitors at lower resolutions\footnote{EVGA DisplayPort Hub\url{https://www.evga.com/products/product.aspx?pn=200-dp-1301-l1}} which makes it possible to run even more screens off a single high end GPU, depending on how many display ports it has. If more monitors than this are needed, multiple GPU's can be installed in the same system, and even more displays can be used. Another way to achieve multiple displays with a single display port is using a technology called daisy chaining. The principle behind this is to connect multiple displays supporting display ports where each one is connected in sequence to each other, hence only requiring one output from the GPU. Depending on the resolution this can be done with 2-5 monitors\cite{displayport}.
+
+\subsection{Interactive display at "The Blue Planet"}
+The Blue Planet is an aquarium located in Copenhagen, Denmark. It's a new and modern facility, with several digital interactive installations. One installation is designed to make the users be the current of the ocean. Projectors show micro organisms on a wall and a Microsoft Kinect detects movement from users. As users walk by the wall, the shadow of the users pushes the micro organisms away from themselves, making the display behave according to the movement of the users.\cite{DenBlaPlanet} 
+
+\subsection{Transcending Boundaries}\label{sec:transcendingBoundaries} % Jens
+Transcending Boundaries is an exhibition that ran in the beginning of 2017 at the Pace Gallery in London. It featured a series of immersive installations made by teamLab in an attempt to transcend the boundaries between digital artwork and the physical world\cite{transcendingBoundries}. \autoref{fig:transcendingBoundaries} shows a virtual waterfall, flowers and butterflies that are projected up on the walls and on the floor in one of the rooms of the exhibit using multiple projectors. The vegetation would indicate changes in seasons and would go through all 4 seasons every hour. Viewers in the room would obstruct the flow of water based on where they were standing and thereby became a part of the artwork. 
+
+    \begin{figure}[H]
+    	\centering
+    	\includegraphics[width=0.9\linewidth]{figure/Analysis/transcendingBoundaries.jpg}
+    	\caption{Figure showing 3 people interacting with the virtual waterfall installation from teamLab's exhibition at the Pace Gallery in London\cite{transcendingBoundries}.}
+    	\label{fig:transcendingBoundaries}
+    \end{figure}
+    
